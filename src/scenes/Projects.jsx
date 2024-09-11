@@ -100,6 +100,8 @@ const Projects = () => {
             tech1="REACT"
             tech2="TAILWIND"
             tech3="FIREBASE"
+            github="https://github.com/akashbhoi2815/ecommerce-online-shop"
+            link="https://ecommerce-online-shop-sigma.vercel.app/"
           />
           <Project
             title="project2"
@@ -108,6 +110,8 @@ const Projects = () => {
             tech1="REACT"
             tech2="CHAKRAUI"
             tech3="FIREBASE"
+            github="https://github.com/akashbhoi2815/parallel-cast-7381"
+            link="https://calendl-yparallel-cast-7381.vercel.app/"
           />
           <Project
             title="project3"
@@ -116,6 +120,8 @@ const Projects = () => {
             tech1="REACT"
             tech2="BOOTSTRAP"
             tech3="REDUX"
+            github="https://github.com/akashbhoi2815/magical-vase-490"
+            link="https://62ef681b8e24d65b3bd926d5--projectjefit.netlify.app/"
           />
           <Project
             title="project4"
@@ -124,6 +130,8 @@ const Projects = () => {
             tech1="JAVASCRIPT"
             tech2="HTML"
             tech3="CSS"
+            github="https://github.com/manish-2396/Natures-Basket_project"
+            link="https://fastidious-quokka-0abdad.netlify.app/"
           />
           <Project
             title="project5"
@@ -132,6 +140,8 @@ const Projects = () => {
             tech1="HTML"
             tech2="CSS"
             tech3="JAVASCRIPT"
+            github="https://github.com/akashbhoi2815/TopGearFashion_E-Commerce"
+            link="https://topgearfashion.vercel.app/"
           />
           {/* <Project title="project1" name="" description="" tech1="" tech2="" tech3=""/>
           <Project title="project1" name="" description="" tech1="" tech2="" tech3=""/> */}
