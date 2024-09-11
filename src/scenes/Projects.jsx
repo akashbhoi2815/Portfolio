@@ -17,7 +17,7 @@ const projectVariant = {
 };
 
 
-const Project = ({ title, name, description, tech1, tech2, tech3 }) => {
+const Project = ({ title, name, description, tech1, tech2, tech3,github,link }) => {
   const overlayStyles = `absolute inset-0 opacity-0 group-hover:opacity-90 transition duration-500
     bg-gray-700 z-30 flex justify-center items-center text-center p-4 text-white rounded-xl`;
 
@@ -35,8 +35,8 @@ const Project = ({ title, name, description, tech1, tech2, tech3 }) => {
           className="object-contain rounded-xl w-full max-h-[280px]"
         />
         <div className={overlayStyles}>
-          <a href="" className="bg-blue-500 text-white p-2 rounded m-1 text-2xl"><BiLogoGithub/></a>
-          <a href="" className="bg-blue-500 text-white p-2 rounded m-1 text-2xl"><BiLink/></a>
+          <a href={github} target="_blank" className="bg-blue-500 text-white p-2 rounded m-1 text-2xl"><BiLogoGithub/></a>
+          <a href={link} target="_blank" className="bg-blue-500 text-white p-2 rounded m-1 text-2xl"><BiLink/></a>
         </div>
       </div>
       <p className="font-playfair text-xl text-black text-center font-bold m-1">
