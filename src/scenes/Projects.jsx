@@ -66,7 +66,7 @@ const Projects = () => {
         className="md:w-2/5 mx-auto text-center"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
         transition={{ duration: 0.5 }}
         variants={{
           hidden: { opacity: 0, y: -50 },
@@ -96,13 +96,13 @@ const Projects = () => {
            <Project
             title="Project1"
             name="Eccomerce"
-            description="Ecommerce is a website for online shoping. Lifestyle is India’s leading fashion destination for the latest trends. 🛍️👘"
+            description="An eCommerce website allows businesses to sell products or services online. It includes features like product listings, shopping carts and user accounts. 🛍️👘"
             tech1="REACT"
             tech2="TAILWIND"
             tech3="FIREBASE"
           />
           <Project
-            title="project1"
+            title="project2"
             name="Calendly.com clone"
             description="Calendly is an app for scheduling appointments, and events.you can send your availability with a Calendly link"
             tech1="REACT"
@@ -110,7 +110,7 @@ const Projects = () => {
             tech3="FIREBASE"
           />
           <Project
-            title="project1"
+            title="project3"
             name="Jefit clone"
             description="On this Jefit website people can manage and track all workouts in one place·"
             tech1="REACT"
@@ -126,7 +126,7 @@ const Projects = () => {
             tech3="CSS"
           />
           <Project
-            title="project1"
+            title="project5"
             name="Stylecraze Clone"
             description="Lifestyle store clone using HTML, CSS ,JavaScript and bootstrap. Lifestyle is India’s leading fashion destination for the latest trends. 🛍️👘"
             tech1="HTML"
