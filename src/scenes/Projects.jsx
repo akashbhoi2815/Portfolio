@@ -26,7 +26,7 @@ const Project = ({ title, name, description, tech1, tech2, tech3,github,link }) 
   return (
     <motion.div
       variants={projectVariant}
-      className="relative p-3 m-2 w-[300px] shadow-[0px_0px_10px_rgba(0,0,0,0.5)] h-[485px] bg-white rounded-xl overflow-hidden"
+      className="relative p-3 m-2 w-[300px] shadow-lg h-[485px] bg-white rounded-xl overflow-hidden"
     >
       <div className="relative group"> {/* Added 'group' class here */}
         <img
@@ -35,7 +35,7 @@ const Project = ({ title, name, description, tech1, tech2, tech3,github,link }) 
           className="object-contain rounded-xl w-full max-h-[280px]"
         />
         <div className={overlayStyles}>
-          <a href={github} target="_blank" className="bg-blue-500 text-white p-2 rounded m-1 text-2xl"><BiLogoGithub/></a>
+          <a href={github} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white p-2 rounded m-1 text-2xl"><BiLogoGithub/></a>
           <a href={link} target="_blank" className="bg-blue-500 text-white p-2 rounded m-1 text-2xl"><BiLink/></a>
         </div>
       </div>

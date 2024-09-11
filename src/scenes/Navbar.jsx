@@ -5,7 +5,7 @@ import { IoMenuSharp } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
 import { TfiMenuAlt } from "react-icons/tfi";
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
+const Link = ({ page, selectedPage, setSelectedPage,setIsMenuToggled, isMenuToggled}) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
@@ -13,7 +13,10 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
         selectedPage === lowerCasePage ? "text-yellow" : ""
       } hover:text-yellow transition duration-500`}
       href={`#${lowerCasePage}`}
-      onClick={() => setSelectedPage(lowerCasePage)}
+      onClick={() => {
+        setSelectedPage(lowerCasePage);
+        setIsMenuToggled(!isMenuToggled);
+      }}
     >
       {page}
     </AnchorLink>
@@ -88,21 +91,29 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 page="Home"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
+                isMenuToggled={isMenuToggled}
+                setIsMenuToggled={setIsMenuToggled}
               />
               <Link
                 page="Skills"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
+                isMenuToggled={isMenuToggled}
+                setIsMenuToggled={setIsMenuToggled}
               />
               <Link
                 page="Projects"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
+                isMenuToggled={isMenuToggled}
+                setIsMenuToggled={setIsMenuToggled}
               />
               <Link
                 page="Contact"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
+                isMenuToggled={isMenuToggled}
+                setIsMenuToggled={setIsMenuToggled}
               />
               <a href="/resume.pdf" download={"resume.pdf"}>
                 Resume
